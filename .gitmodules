@@ -1,0 +1,9 @@
+[submodule "util/luatool"]
+	path = util/luatool
+	url = https://github.com/4refr0nt/luatool.git
+[submodule "util/esptool"]
+	path = util/esptool
+	url = https://github.com/themadinventor/esptool.git
+[submodule "util/mkspiffs"]
+	path = util/mkspiffs
+	url = https://github.com/igrr/mkspiffs

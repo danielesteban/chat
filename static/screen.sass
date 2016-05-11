@@ -1,0 +1,86 @@
+*, *:before, *:after
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+html, body
+	margin: 0
+	padding: 0
+	cursor: default
+
+html
+	font-family: "Andale Mono", "Courier", monospace
+	font-size: 16px
+	font-weight: 100
+
+body
+	padding-bottom: 35px
+	padding-right: 150px
+	background: #000
+	color: #0f0
+
+#messages > div
+	padding: 0 10px
+	line-height: 28px
+	white-space: pre-wrap
+	&.server
+		color: #009900
+	&.fixed
+		position: fixed
+		width: 200px
+		top: 50%
+		left: 50%
+		margin-top: -45px
+		margin-left: -175px
+		text-align: center
+
+#input
+	position: fixed
+	bottom: -30px
+	left: 0
+	width: 100%
+	padding-right: 30px
+	-webkit-transition: bottom .15s ease-out
+	transition: bottom .15s ease-out
+	&.active
+		bottom: 0
+	input[type="text"], button
+		display: block
+		width: 100%
+		height: 30px
+		margin: 0
+		padding: 6px 10px
+		border: 0
+		background: #282828
+		color: #0e0
+		font-family: inherit
+		font-size: inherit
+		font-weight: inherit
+		outline: none
+	button
+		position: absolute
+		top: 0
+		right: 0
+		width: 30px
+
+#peers
+	position: fixed
+	top: 0
+	right: 0
+	width: 150px
+	height: 100%
+	overflow-y: auto
+	list-style-type: none
+	margin: 0
+	padding: 0
+	background: #181818
+	li
+		padding: 6px 12px
+
+@media only screen and (max-width:480px)
+	body
+		padding-right: 0
+	#messages > div.fixed
+		margin-left: -100px
+	#peers
+		display: none
